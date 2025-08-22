@@ -1,0 +1,14 @@
+# git aliases
+alias gs='git status'
+alias ga='git add -A'
+alias gd='git diff'
+alias gl='git log'
+alias gc='git commit -m'
+alias gp='git pull'
+alias gcm='git checkout master'
+alias gco='git checkout'
+alias gpp='git pull -r && git push'
+
+# other stuff
+alias ll='ls -l'
+alias p='cd ~/Projects && idea "$(find . -maxdepth 1 -type d | sed "s|^\./||" | fzf)"'

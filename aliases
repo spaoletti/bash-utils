@@ -11,4 +11,4 @@ alias gpp='git pull -r && git push'
 
 # other stuff
 alias ll='ls -l'
-alias p='cd ~/Projects && idea "$(find . -maxdepth 1 -type d | sed "s|^\./||" | fzf)"'
+alias p='cd ~/Projects && project=$(find . -maxdepth 1 -type d | sed "s|^\./||" | fzf) && [ -n "$project" ] && cd "$project" && idea .'
